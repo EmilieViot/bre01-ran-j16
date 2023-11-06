@@ -24,12 +24,19 @@ body header
 
 body header img
 {
-    margin : 0;
-    padding : 0;
-    align-self : center;
-    height : 7vh;
-    align-self : center;
-    justify-self : center;
+    /*margin : 0;*/
+    /*padding : 0;*/
+    /*align-self : center;*/
+    /*height : 7vh;*/
+    /*align-self : center;*/
+    /*justify-self : center;*/
+    
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height : 8vh;
+}
 }
 
 body header nav ul
@@ -48,6 +55,7 @@ body > header > nav > ul > li
     align-self : center;
     list-style:none;
     font-size : 1.2rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body > header > nav > ul > li > a
@@ -133,19 +141,44 @@ body main
     display : grid;
     grid-row : 3/4;
     grid-column : 2/3;
-    grid-template-columns:repeat(3,1fr);
     color : white;
     column-gap : 2vh;
     align-self : center;
 }
 
-#section3 article
+#section3 ul
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+    list-style: none;
+    margin:0;
+    padding:0;
+    margin-top: 4rem;
+}
+
+#section3 ul li article
 {
     height : 25vh;
     align-self : center;
     background-color:#b7094c;
     padding : 1vh;
 }
+
+#section3 ul li article:first-of-type
+{
+    grid-column:1/2;
+}    
+
+#section3 ul li article:nth-of-type(2)
+{
+    grid-column:2/3;
+}   
+
+#section3 ul li article:last-of-type
+{
+    grid-column:3/4;
+}    
 
 #section3 h2
 {
@@ -240,7 +273,7 @@ footer section ul:nth-of-type(2)
 
 footer section ul:nth-of-type(2) li a
 {
-        color : #723c70;
+    color : #723c70;
 }
 
 footer section ul:last-of-type
@@ -259,7 +292,10 @@ footer section ul:last-of-type li a
 footer li a:link
 {
     justify-self:center;
- }
+}
+ 
+ 
+
 
 
 

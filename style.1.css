@@ -1,0 +1,250 @@
+html 
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size : 14px;
+}
+
+body 
+{
+    margin:0;
+    padding:0;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 10vh 120vh 20vh;
+}   
+   
+body header
+{
+    height: 10vh;
+    background: linear-gradient(to right, #2E6F95, #455E89, #5C4D7D, #723C70, #892B64);
+    display : grid;
+    grid-template-columns: 20% 80%;
+}
+
+body header img
+{
+    margin : 0;
+    padding : 0;
+    align-self : center;
+    height : 7vh;
+    align-self : center;
+    justify-self : center;
+}
+
+body header nav ul
+{
+    height: 100%;
+    margin: 0;
+    padding : 0;
+    display : grid;
+    grid-template-columns: repeat(3,1fr);
+    list-style:none;
+    align-self : center;
+}
+    
+body > header > nav > ul > li
+{
+    align-self : center;
+    list-style:none;
+    font-size : 1.2rem;
+}
+
+body > header > nav > ul > li > a
+{
+    color : #ffffff;
+    text-decoration : none;
+    align-self : center;
+}
+
+/*MAIN*/
+
+main
+{
+    height: 120vh;
+    border-top : 1px solid #ffffff;
+    border-bottom : 1px solid #2E6F95;
+    display : grid;
+    grid-template-columns : 20% 80%;
+    column-gap:1rem;
+}
+
+/*COLONNE DE GAUCHE*/
+
+#presentationCharlieDoe
+{
+    height: 120vh;
+    margin : 0;
+    padding : 2rem;
+    grid-column :1/2;    
+    background-color : #b7094c;
+    color : white;
+    text-align : center;
+}
+
+#presentationCharlieDoe img
+{
+    justify-self:center;
+    align-self:center;
+    width : 80%;
+}
+
+#presentationCharlieDoe h2
+{
+    justify-self:center;
+    text-align : center;
+    font-size : 1.5rem;
+    }
+
+#presentationCharlieDoe p
+{
+    justify-self:center;
+    text-align : center;
+    font-size : 1rem;
+}
+
+
+/*COLONNE DE DROITE*/
+
+#CV
+{
+    height: 120vh;
+    margin : 0;
+    padding : 2rem;
+    display : grid;
+    grid-template-rows:2fr 1fr 5fr 1fr 3fr 1fr 3fr;
+    grid-column :2/3; 
+}
+
+#CV h2
+{
+    grid-row : 1/2;
+    font-size : 4rem;
+    font-weight : 700;
+}
+
+#CV h3:first-of-type
+{
+    grid-row : 2/3;
+    font-size : 3rem;
+    color : #892B64;
+}
+
+#CV h3:first-of-type ul
+{
+    grid-row : 3/4;
+    color : white;
+    font-size : 2rem;
+    list-style:none;
+}
+
+#CV h3:nth-of-type(2)
+{
+    grid-row : 4/5;
+}
+
+#CV h3:nth-of-type(2) ul
+{
+   grid-row : 5/6;
+    color : white;
+    font-size : 2rem;
+    list-style:none;
+}
+
+#CV h3:nth-of-type(3)
+{
+   grid-row : 6/7;
+}
+
+#CV h3:nth-of-type(3) ul
+{
+   grid-row : 7/8;
+   color : white;
+   font-size : 2rem;
+   list-style:none;
+}
+
+
+footer
+{
+    grid-row : 3/4;
+    height : 20vh ;
+    display: grid;
+    grid-template-rows : 5vh 15vh;
+    font-family:Montserrat;
+}
+
+footer h2
+{
+    grid-row : 1/2;
+    justify-self: center;
+    color: #060b0e;
+    font-size : 1.2rem;
+    align-self:center;
+}
+
+footer section
+{
+    grid-row : 2/3;
+    display: grid;
+    grid-template-columns : repeat (3,1fr);
+}
+
+footer section ul
+{
+    list-style:none;
+    align-self:center;
+    text-align:center;
+    font-size : 1.2rem;
+    line-height : 2;
+}
+
+footer section ul:first-of-type
+{
+    grid-row : 2/3;
+    grid-column : 1/2;
+    justify-self:center;
+    align-self:center;
+    list-style:none;
+}
+
+footer section ul:first-of-type li a
+{
+        color : #a01a58;
+}
+
+footer section ul:nth-of-type(2)
+{
+    grid-row : 2/3;
+    grid-column : 2/3;
+    justify-self:center;
+    align-self:center;
+}
+
+footer section ul:nth-of-type(2) li a
+{
+        color : #723c70;
+}
+
+footer section ul:last-of-type
+{
+    grid-row : 2/3;
+    grid-column : 3/4;
+    justify-self:center;
+    align-self:center;
+}
+
+footer section ul:last-of-type li a
+{
+    color : #455e89;
+}
+
+footer li a:link
+{
+    justify-self:center;
+ }
+
+.css
+
+
+
